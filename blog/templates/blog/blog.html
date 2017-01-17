@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    {% for post in object_list %}
+    {% for post in queryset %}
     <h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{ post.id }}"> {{ post.title }}</a></h5>
     {% endfor %}
 {% endblock %}
